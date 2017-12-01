@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Your code here -->
+	<template>
+	  <div>
+	    <md-card md-with-hover>
+	      <md-ripple>
+		<md-card-header>
+		  <div class="md-title">Equanimity</div>
+		  <div class="md-subhead">Small definition</div>
+		</md-card-header>
+
+		<md-card-content>
+		  Equanimity is the 3rd option instead of push/pull.
+		</md-card-content>
+	      </md-ripple>
+	    </md-card>
+
+	    <md-card md-with-hover>
+	      <md-ripple>
+		<md-card-header>
+		  <div class="md-title">Concentration</div>
+		  <div class="md-subhead">Small definition</div>
+		</md-card-header>
+
+		<md-card-content>
+		  Concentration is the ability to focus on what's relevant
+		</md-card-content>
+	      </md-ripple>
+	    </md-card>
+	  </div>
+	</template>
+
+      <!--     ------     -->
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material@beta"></script>
+    <script>
+      Vue.use(VueMaterial.default)
+
+      new Vue({
+        el: '#app'
+      })
+    </script>
+    <script>
+      export default {
+        name: 'Cards'
+      }
+    </script>
+
+	<style lang="scss" scoped>
+	  .md-card {
+	    width: 320px;
+	    margin: 4px;
+	    display: inline-block;
+	    vertical-align: top;
+	  }
+	</style>
+  </body>
+</html>
